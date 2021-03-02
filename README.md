@@ -24,4 +24,5 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 ![alt text](https://github.com/nicholas-palermo/twitter_remodel/blob/master/Twitter_Part1_Gif1.gif)
+![alt text](https://github.com/nicholas-palermo/twitter_remodel/blob/master/Twitter_Part1_Gif2.gif)
 
