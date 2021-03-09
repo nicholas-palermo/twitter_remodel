@@ -20,7 +20,9 @@ class TweetTableViewCell: UITableViewCell {
     @IBOutlet weak var tweetBody: UILabel!
     @IBOutlet weak var profileScreenName: UILabel!
     @IBOutlet weak var retweetButton: UIButton!
+    @IBOutlet weak var retweetCount: UILabel!
     @IBOutlet weak var favButton: UIButton!
+    @IBOutlet weak var favoriteCount: UILabel!
     
     
     var favorited:Bool = false

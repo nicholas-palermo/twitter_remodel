@@ -7,17 +7,23 @@
 //
 
 import UIKit
+import RSKPlaceholderTextView
 
-class PostTweetViewController: UIViewController {
+class PostTweetViewController: UIViewController, UITextViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         tweetTextField.becomeFirstResponder()
+        tweetTextField.placeholder = "What's happening?"
 
+        tweetTextField.delegate = self
         // Do any additional setup after loading the view.
     }
-    @IBOutlet weak var tweetTextField: UITextView!
-    @IBOutlet weak var profilePicture: UIImageView!
+    
+    
+    @IBOutlet weak var tweetTextField: RSKPlaceholderTextView!
+    
+    
     
     @IBAction func cancelTweet(_ sender: Any) {
         dismiss(animated: true, completion: nil)

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RSKPlaceholderTextView
 
 class HomeTableViewController: UITableViewController {
 
@@ -80,16 +81,6 @@ class HomeTableViewController: UITableViewController {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 
     @IBAction func onLogout(_ sender: Any) {
         TwitterAPICaller.client?.logout()
@@ -130,6 +121,12 @@ class HomeTableViewController: UITableViewController {
         if let imageData = data {
             cell.profilePicture.image = UIImage(data: imageData)
         }
+        
+        let retweetCount = tweetArray[indexPath.row]["retweet_count"] as! Int
+        let favoriteCount = tweetArray[indexPath.row]["favorite_count"] as! Int
+        
+        cell.retweetCount.text = "\(retweetCount)"
+        cell.favoriteCount.text = "\(favoriteCount)"
         
         cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
         cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
