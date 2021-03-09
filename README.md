@@ -25,7 +25,7 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 
-![](Twitter Part 2 Gif1.gif)
+![](https://github.com/nicholas-palermo/twitter_remodel/blob/08e3c715b9e8e48efdeffa092effb2fe5059f8cb/Twitter%20Part%202%20Gif1.gif)
 
 **Twitter** is a basic twitter app to read your tweets.
 
